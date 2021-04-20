@@ -10,6 +10,10 @@ import Login from './components/Login/Login';
 import PrivateRoute from './components/Login/PrivateRoute';
 import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import Navbar from './components/Shared/Navbar/Navbar';
+import AddAdmin from './components/Dashboard/AddAdmin/AddAdmin';
+import AddService from './components/Dashboard/AddService/AddService';
+import OrderedService from './components/Dashboard/OrderedService/OrderedService';
+import ManageOrderedServices from './components/Dashboard/ManageOrderedServices/ManageOrderedServices';
 
 export const UserContext = createContext();
 
@@ -26,12 +30,15 @@ function App() {
           <PrivateRoute path="/dashboard">
             <Dashboard></Dashboard>
           </PrivateRoute>
-          {/* <PrivateRoute path="/allPatients">
-            <AllPatients></AllPatients>
+          <PrivateRoute path="/addAdmin">
+            <AddAdmin></AddAdmin>
           </PrivateRoute>
-          <Route path="/addDoctor">
-            <AddDoctor></AddDoctor>
-          </Route> */}
+          <PrivateRoute path="/addService">
+            <AddService></AddService>
+          </PrivateRoute>
+          <PrivateRoute path="/ManageOrderServices">
+            <ManageOrderedServices></ManageOrderedServices>
+          </PrivateRoute>
           <Route path="/login">
             <Login></Login>
           </Route>

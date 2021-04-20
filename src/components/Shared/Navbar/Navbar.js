@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../../App';
+import './Navbar.css'
 
 const Navbar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -17,10 +18,7 @@ const Navbar = () => {
                         <Link className="nav-link mr-5" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link mr-5" to="/login">Login</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link mr-5 text-white" to="/service">Service</Link>
+                        <Link className="nav-link mr-5" to="/service">Service</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link mr-5" to="/dashboard">Dashboard</Link>
