@@ -1,0 +1,24 @@
+.review-card-container{
+    margin: 0px;
+}
+#reviewSection{
+    background-color: hsl(159, 11%, 71%);
+}
+.review-card{
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F8F7F5;
+    box-shadow:1px 3px 10px gray;
+}
+
+a:hover{
+    text-decoration:none;
+}
+
+.reviewImage{
+    border: 1px solid whitesmoke;
+    border-radius:60%;
+    width:85%;
+    height: 200px;
+}

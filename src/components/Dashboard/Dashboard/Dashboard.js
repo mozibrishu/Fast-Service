@@ -10,20 +10,6 @@ const containerStyle = {
 
 const Dashboard = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-    // const [orderedService, setOrderedService] = useState([]);
-
-
-    // useEffect(() => {
-    //     fetch('http://localhost:5000/orderedService?email='+loggedInUser.email, {
-    //         method: 'GET',
-    //         headers: { 
-    //             'Content-Type': 'application/json'
-    //         }
-    //     })
-    //     .then(res => res.json())
-    //     .then(data => setOrderedService(data));
-    // }, [])
-
     return (
         <section>
             <div className="row">

@@ -1,0 +1,7 @@
+.footer-area{
+    background-color: hsl(180, 45%, 86%);
+}
+
+.footer-area li{
+    padding-bottom: 10px;
+}

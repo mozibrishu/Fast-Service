@@ -25,7 +25,6 @@ const OrderedService = () => {
                     <tr>
                         <th scope="col">Service</th>
                         <th scope="col">Cost</th>
-                        <th scope="col">Order Time</th>
                         <th scope="col">Status</th>
                     </tr>
                 </thead>

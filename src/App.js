@@ -15,6 +15,7 @@ import AddService from './components/Dashboard/AddService/AddService';
 import ManageOrderedServices from './components/Dashboard/ManageOrderedServices/ManageOrderedServices';
 import ManageServices from './components/Dashboard/ManageServices/ManageServices';
 import AddReview from './components/Dashboard/AddReview/AddReview';
+import SelectedService from './components/ServicePurchase/SelectedService/SelectedService';
 
 export const UserContext = createContext();
 
@@ -31,6 +32,9 @@ function App() {
           <PrivateRoute path="/dashboard">
             <Dashboard></Dashboard>
           </PrivateRoute>
+          <PrivateRoute path="/selectedService/:serviceId">
+              <SelectedService></SelectedService>
+            </PrivateRoute>
           <PrivateRoute path="/addAdmin">
             <AddAdmin></AddAdmin>
           </PrivateRoute>

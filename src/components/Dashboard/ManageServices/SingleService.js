@@ -1,11 +1,11 @@
 import React from 'react';
 
 const SingleService = (props) => {
-    const {_id, name, price, displayName, orderTime} = props.service;
+    const {_id, name, cost} = props.service;
 
     function deleteOrder(event, id) {
         console.log(_id);
-        fetch(`https://morri-lock-store.herokuapp.com/deleteOrder/${id}`, {
+        fetch(`http://localhost:5000/deleteService/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
@@ -19,9 +19,7 @@ const SingleService = (props) => {
     return (
         <tr>
             <td>{name}</td>
-            <td>${price}</td>
-            <td>{displayName}</td>
-            <td>{(new Date(orderTime).toLocaleString("en-IN"))}</td>
+            <td>${cost}</td>
             <td><button className="btn btn-danger" onClick={(event) => deleteOrder(event,`${_id}`)}>Delete</button></td>
         </tr>
     );

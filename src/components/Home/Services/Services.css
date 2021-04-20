@@ -1,8 +1,11 @@
-.product-card-container{
+.service-card-container{
     margin: 0px;
 }
+#serviceSection{
+    background-color: #adb6bba8;
+}
 
-.product-card{
+.service-card{
     width: 95%;
     padding: 10px;
     border-radius: 10px;
@@ -14,7 +17,7 @@ a:hover{
     text-decoration:none;
 }
 
-.productImage{
-    width:80%;
+.serviceImage{
+    width:85%;
     height: 200px;
 }

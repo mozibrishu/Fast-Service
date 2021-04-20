@@ -22,9 +22,7 @@ const ManageServices = () => {
                 <thead>
                     <tr>
                         <th scope="col">Name</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Order By</th>
-                        <th scope="col">Time</th>
+                        <th scope="col">Cost</th>
                         <th scope="col">Delete</th>
                     </tr>
                 </thead>
