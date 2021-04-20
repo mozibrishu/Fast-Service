@@ -12,8 +12,9 @@ import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import Navbar from './components/Shared/Navbar/Navbar';
 import AddAdmin from './components/Dashboard/AddAdmin/AddAdmin';
 import AddService from './components/Dashboard/AddService/AddService';
-import OrderedService from './components/Dashboard/OrderedService/OrderedService';
 import ManageOrderedServices from './components/Dashboard/ManageOrderedServices/ManageOrderedServices';
+import ManageServices from './components/Dashboard/ManageServices/ManageServices';
+import AddReview from './components/Dashboard/AddReview/AddReview';
 
 export const UserContext = createContext();
 
@@ -36,8 +37,14 @@ function App() {
           <PrivateRoute path="/addService">
             <AddService></AddService>
           </PrivateRoute>
+          <PrivateRoute path="/addReview">
+            <AddReview></AddReview>
+          </PrivateRoute>
           <PrivateRoute path="/ManageOrderServices">
             <ManageOrderedServices></ManageOrderedServices>
+          </PrivateRoute>
+          <PrivateRoute path="/manageServices">
+            <ManageServices></ManageServices>
           </PrivateRoute>
           <Route path="/login">
             <Login></Login>

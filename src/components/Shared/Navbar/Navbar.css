@@ -1,3 +1,11 @@
-.navCheck{
+.title{
+    font-family: 'Allura', cursive;
+    font-size: 1.6em;
+    margin-left: 0;
+    color: black;
+    font-weight:800;
+}
 
+nav{
+    background-color: #0D324D;
 }
